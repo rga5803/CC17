@@ -9,15 +9,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Divider
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -71,7 +68,7 @@ fun LearningContractScreen() {
         hindrances.Content()
         expectations.Content()
         motivations.Content()
-        
+
         // Divider Line
         HorizontalDivider(
             modifier = Modifier.padding(vertical = 16.dp),
@@ -79,21 +76,15 @@ fun LearningContractScreen() {
             color = Color(0xFFB0BEC5)
         )
 
-        // Signer Section
         Text(
-            text = "Contract Signer:",
-            fontSize = 14.sp,
-            color = Color(0xFF546E7A),
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth()
-        )
-        Text(
-            text = "[ Your Name Here ]",
+            text = "AMRBOCIO, Rafael Enrico G.\n" +
+                    "BONA, Jethro Jo N.\n" +
+                    "CAJUSAY, John Carlo Z.",
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
-            fontStyle = FontStyle.Italic,
+            fontStyle = FontStyle.Normal,
             color = Color(0xFF1A237E),
-            textAlign = TextAlign.Center,
+            textAlign = TextAlign.Left,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 4.dp, bottom = 16.dp)
